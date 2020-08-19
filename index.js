@@ -54,7 +54,7 @@ var app = new Vue({
                     document.querySelector("#\\32 ").disabled="";
                     document.querySelector("#\\33 ").disabled="";
                     document.querySelector("#\\34 ").disabled="";
-                    setTimeout(checkFunction, 100*app.complexity*app.count);
+                    setTimeout(checkFunction, 150*app.complexity*app.count);
                     
                     function checkFunction () {
                         if (app.answer===seq) {
