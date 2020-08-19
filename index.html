@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            
+            <div class="container">
+                <h1>Simon Says Game</h1>
+                <div class="buttons">
+                    <button v-for="elem in list" @click="checkNum" @mouseenter="elem.hover = true" @mouseleave="elem.hover = false" :class="elem.hover ? elem.color2: elem.color" v-bind:id="elem.id"></button>
+                </div>
+            </div><br>
+            <div class="container">
+                <p>Game control</p>
+                <button @click="startGame" class="btn btn-secondary start">Start</button>
+                <br><br><p>Game options</p>
+                <input type="radio" name="complexity" @click="easyGame" checked="checked">
+                <label for="mc1">Easy</label>
+              
+                <input type="radio" name="complexity" @click="mediumGame">
+                <label for="mc2">Medium</label>
+              
+                <input type="radio" name="complexity" @click="hardGame">
+                <label for="mc3">Hard</label>
+            </div>
+
+  <!--          <h1>URL App: <a v-bind:href="url">{{cleanUrl}}</a></h1>
+            <input type="text" class="form-control" v-model="url">
+            <button @click="cleanerUrl" class="btn btn-primary">Clean URL</button>
+            -->
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

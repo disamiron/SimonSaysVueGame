@@ -1,0 +1,33 @@
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.start {
+    width: 80px;
+}
+.blue {
+    background:#99ddff;
+}
+.dark-blue {
+    background: #00aaff;
+}
+.red {
+    background:#ff9999;
+}
+.dark-red {
+    background: #ff0000;
+}
+.yellow {
+    background:#ffff99;
+}
+.dark-yellow {
+    background: #ffff00;
+}
+.green {
+    background:#99ffbb;
+}
+.dark-green {
+    background: #00ff55;
+}
